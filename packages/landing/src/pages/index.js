@@ -35,13 +35,10 @@ const HostingModern = () => {
           href="https://fonts.googleapis.com/css?family=Bree+Serif|DM+Sans:400,400i,500,500i,700,700i&display=swap"
         />
       </Head>
-
       <ResetCSS />
       <GlobalStyle />
-
       <ContentWrapper>                
-        <Banner />                
-        <Footer />
+        <Banner />
       </ContentWrapper>
     </ThemeProvider>
   );

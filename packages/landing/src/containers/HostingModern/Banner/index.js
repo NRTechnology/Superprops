@@ -22,13 +22,19 @@ const options = [
 ];
 
 const Banner = () => {
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert('tests')
+    console.log('You clicked submit.');
+  }
+
   return (
     <BannerSection id="home">
       <Container>
         <ContentWrapper>
           <BannerContent>
-            <Heading as="h1" content="Built your business with a website" />
-            <Text content="Get your tests delivered at let home collect sample from the victory of the managements that supplies best." />
+            <Heading as="h1" content="Pay by QRIS" />
+            <Text content="Pembayaran Retribusi mudah dengan QRIS. Scan Code Bayar dengan semua dompet digitalmu" />
             <DomainChecker>
               <DomainControl>
                 <Input
@@ -37,16 +43,8 @@ const Banner = () => {
                   iconPosition="left"
                   aria-label="domain"
                 />
-                <Select
-                  options={options}
-                  defaultValue={options[0]}
-                  id="domain"
-                  components={{
-                    IndicatorSeparator: () => null,
-                  }}
-                />
               </DomainControl>
-              <Button fullWidth title="Cek Id Billing" type="submit" />
+              <Button fullWidth title="Cek Id Billing" type="submit" onClick={handleSubmit} />
             </DomainChecker>
           </BannerContent>
           <BannerImage>
