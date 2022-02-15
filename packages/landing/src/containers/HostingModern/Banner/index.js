@@ -25,6 +25,7 @@ const Banner = () => {
   function handleSubmit(e) {
     e.preventDefault();
     alert('tests')
+    // https://bimaqris.bankjateng.co.id/welcome/responseGenerate
     console.log('You clicked submit.');
   }
 
@@ -39,7 +40,7 @@ const Banner = () => {
               <DomainControl>
                 <Input
                   inputType="text"
-                  placeholder="Your domain name"
+                  placeholder="Masukan kode Id Billing"
                   iconPosition="left"
                   aria-label="domain"
                 />
