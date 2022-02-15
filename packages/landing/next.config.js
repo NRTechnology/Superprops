@@ -6,7 +6,7 @@ const nextConfig = {
     //domains: ['pbs.twimg.com'],
     loader: 'imgix',
     path: 'https://qris.brebeskab.go.id/',
-  },
+  }
 };
 
 module.exports = withPlugins([], nextConfig);
