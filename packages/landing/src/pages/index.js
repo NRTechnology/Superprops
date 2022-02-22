@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import Sticky from 'react-stickynode';
@@ -37,8 +37,8 @@ const HostingModern = () => {
       </Head>
       <ResetCSS />
       <GlobalStyle />
-      <ContentWrapper>                
-        <Banner />
+      <ContentWrapper>
+        <Banner/>
       </ContentWrapper>
     </ThemeProvider>
   );

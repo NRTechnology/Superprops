@@ -55,6 +55,7 @@ const Input = ({
       ...state,
       value: event.target.value,
     });
+    console.log("VALUE ", state.value)
     onChange(event.target.value);
   };
 
